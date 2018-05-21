@@ -2,6 +2,11 @@
 var wins = 0;
 var losses = 0;
 var ourTotal = 0;
+var redbutton = 0;
+var bluebutton = 0;
+var yellowbutton = 0;
+var greenbuttton = 0;
+var myRandomNumber = 0;
 
 
 function getRandomInt(min, max) {
@@ -15,12 +20,16 @@ var blue = document.getElementById("blue");
 var yellow = document.getElementById("yellow");
 var green = document.getElementById("green");
 
-var operatorPressed = false;
+$('#myRandomNumber').text(getRandomInt(19, 121));
 
-    $('.game').on('click', '.number', function () {
+$("ourTotal").click(getRandomInt(1, 13))
+    $("ourTotal").append()
 
-        if (operatorPressed === false) {
-            // first number
-            $('#ourTotalScore').append(this.value);
-        }
-    });
+$(document).ready(function () {
+    
+
+$('#ourTotal').text(getRandomInt(1, 13))
+
+});
+
+
