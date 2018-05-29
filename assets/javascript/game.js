@@ -11,13 +11,6 @@ $(document).ready(function () {
     $("#wins").html(wins);
     $("#losses").html(losses);
 
-    var RandomNumber = 0;
-    var redButton = 0;
-    var blueButton = 0;
-    var yellowButton = 0;
-    var greenButton = 0;
-    var ourTotal = 0;
-
     function startOver() {
         var RandomNumber = Math.floor(Math.random() * ((120 - 19) + 1) + 19);
         var redButton = Math.floor(Math.random() * ((12 - 1) + 1) + 1);
@@ -31,27 +24,14 @@ $(document).ready(function () {
             ourTotal = redButton + ourTotal;
             $("#ourTotal").html(ourTotal);
             if (ourTotal === RandomNumber) {
-                wins++;
+                wins = (wins + 1);
                 $("#wins").html(wins);
-                startOver();
             };
             if (ourTotal > RandomNumber) {
-                losses++;
+                losses = (losses + 1);
                 $("#losses").html(losses);
-                startOver();
             };
         });
     }
     startOver();
-
-
-
-
-
-
-
-
-
-
-
 });
