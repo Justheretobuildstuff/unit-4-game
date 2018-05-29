@@ -16,6 +16,7 @@ var blueButton = Math.floor(Math.random() * ((12-1)+1) + 1);
 var yellowButton = Math.floor(Math.random() * ((12-1)+1) + 1);
 var greenButton = Math.floor(Math.random() * ((12-1)+1) + 1);
 
+    function startOver(result) {
     $("#ourTotal").append(ourTotal);
     $("#wins").append(wins);
     $("#losses").append(losses);
@@ -39,6 +40,7 @@ var greenButton = Math.floor(Math.random() * ((12-1)+1) + 1);
 
 
     });
+}
 
 
 
