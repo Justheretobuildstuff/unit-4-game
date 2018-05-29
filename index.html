@@ -18,29 +18,40 @@
         <div class="container">
 
             <div class="row">
-                <div class="col-3" id="myRandomNumber">
-                    <h3 id="myRandomNumber">
-                    </h3>
+                <div class="col-3">
+                    <h3 id="myRandomNumber"></h3>
                 </div>
                 <div class="col-3">
-                    <h3>Wins:
-
-                    </h3>
-                    <h3>
-                        Losses:
-
-                    </h3>
-                </div>
-                <div class="col-6"></div>
-                <button id="button-1" class="btn btn-primary number col-12" value="1">
-                        <h1>red</h1>
-                      </button>
-                <div class="row col-12">
-                    <h3>Your total score is:</h3>
-                    <h3 id="ourTotal"></h3>
+                    <div class="row col-12">
+                         <h3>Wins:</h3>
+                        <h3 id="wins"></h3>
+                    </div>
+                    <div class="row col-12">
+                    <h3>Losses:</h3>
+                    <h3 id="losses"></h3>
+                    </div>
                 </div>
             </div>
+            <div class="col-12"></div>
+            <button id="button-1" class="btn btn-primary col-1">
+                <h1>red</h1>
+            </button>
+            <button id="button-2" class="btn btn-primary col-1">
+                <h1>blue</h1>
+            </button>
+            <button id="button-3" class="btn btn-primary col-1">
+                <h1>yellow</h1>
+            </button>
+            <button id="button-4" class="btn btn-primary col-1">
+                <h1>green</h1>
+            </button>
+            <div class="row col-12">
+                <h3>Your total score is: </h3>
+                <h3 id="ourTotal"></h3>
+            </div>
+            <div id="myDiv" onClick="divFunction()">Some Content</div>
         </div>
+    </div>
     </div>
 </body>
 
