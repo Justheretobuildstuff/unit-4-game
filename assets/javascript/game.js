@@ -7,31 +7,73 @@ $(document).ready(function () {
     var blueButton = 0;
     var yellowButton = 0;
     var greenbButton = 0;
+    var ourTotal = 0;
 
-    $("#wins").html(wins);
-    $("#losses").html(losses);
+    function entireLoop() {
 
-    function startOver() {
         var RandomNumber = Math.floor(Math.random() * ((120 - 19) + 1) + 19);
         var redButton = Math.floor(Math.random() * ((12 - 1) + 1) + 1);
         var blueButton = Math.floor(Math.random() * ((12 - 1) + 1) + 1);
         var yellowButton = Math.floor(Math.random() * ((12 - 1) + 1) + 1);
         var greenButton = Math.floor(Math.random() * ((12 - 1) + 1) + 1);
         var ourTotal = 0;
+
+        $("#wins").html(wins);
+        $("#losses").html(losses);
         $("#generatedNumber").html(RandomNumber);
         $("#ourTotal").html(ourTotal);
-        $("#button-1").on("click", function () {
-            ourTotal = redButton + ourTotal;
-            $("#ourTotal").html(ourTotal);
-            if (ourTotal === RandomNumber) {
-                wins = (wins + 1);
-                $("#wins").html(wins);
-            };
-            if (ourTotal > RandomNumber) {
-                losses = (losses + 1);
-                $("#losses").html(losses);
-            };
-        });
+
+        function startOver() {
+            $("#button-1").on("click", function () {
+                ourTotal = redButton + ourTotal;
+                $("#ourTotal").html(ourTotal);
+                if (ourTotal > RandomNumber) {
+                    losses = (losses + 1);
+                    $("#losses").html(losses);
+                }
+                else if (ourTotal === RandomNumber) {
+                    wins = (wins + 1);
+                    $("#wins").html(wins);
+                }
+            });
+            $("#button-2").on("click", function () {
+                ourTotal = blueButton + ourTotal;
+                $("#ourTotal").html(ourTotal);
+                if (ourTotal > RandomNumber) {
+                    losses = (losses + 1);
+                    $("#losses").html(losses);
+                }
+                else if (ourTotal === RandomNumber) {
+                    wins = (wins + 1);
+                    $("#wins").html(wins);
+                }
+            });
+            $("#button-3").on("click", function () {
+                ourTotal = yellowButton + ourTotal;
+                $("#ourTotal").html(ourTotal);
+                if (ourTotal > RandomNumber) {
+                    losses = (losses + 1);
+                    $("#losses").html(losses);
+                }
+                else if (ourTotal === RandomNumber) {
+                    wins = (wins + 1);
+                    $("#wins").html(wins);
+                }
+            });
+            $("#button-4").on("click", function () {
+                ourTotal = greenButton + ourTotal;
+                $("#ourTotal").html(ourTotal);
+                if (ourTotal > RandomNumber) {
+                    losses = (losses + 1);
+                    $("#losses").html(losses);
+                }
+                else if (ourTotal === RandomNumber) {
+                    wins = (wins + 1);
+                    $("#wins").html(wins);
+                }
+            });
+
+        }
     }
-    startOver();
+    entireLoop();
 });
