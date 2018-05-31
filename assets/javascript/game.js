@@ -18,62 +18,105 @@ $(document).ready(function () {
         blueButton = Math.floor(Math.random() * ((12 - 1) + 1) + 1);
         yellowButton = Math.floor(Math.random() * ((12 - 1) + 1) + 1);
         greenButton = Math.floor(Math.random() * ((12 - 1) + 1) + 1);
-
-
-        $("#wins").html(wins);
-        $("#losses").html(losses);
-        $("#generatedNumber").html(RandomNumber);
+        
+        $("#ourTotal").text(ourTotal);
+        $("#wins").text(wins);
+        $("#losses").text(losses);
+        $("#generatedNumber").text(RandomNumber);
 
         $("#button-1").on("click", function () {
             ourTotal = redButton + ourTotal;
-            $("#ourTotal").html(ourTotal);
+            $("#ourTotal").text(ourTotal);
             if (ourTotal < RandomNumber) {
-                $("#ourTotal").html(ourTotal);
+                $("#ourTotal").text(ourTotal);
             } else if (ourTotal > RandomNumber) {
                 losses = (losses + 1);
-                $("#losses").html(losses);
+                RandomNumber = Math.floor(Math.random() * ((120 - 19) + 1) + 19);
+                redButton = Math.floor(Math.random() * ((12 - 1) + 1) + 1);
+                blueButton = Math.floor(Math.random() * ((12 - 1) + 1) + 1);
+                yellowButton = Math.floor(Math.random() * ((12 - 1) + 1) + 1);
+                greenButton = Math.floor(Math.random() * ((12 - 1) + 1) + 1);
+                ourTotal = 0;
+                $("#losses").text(losses);
             } else if (ourTotal === RandomNumber) {
                 wins = (wins + 1);
-                $("#wins").html(wins);
+                redButton = Math.floor(Math.random() * ((12 - 1) + 1) + 1);
+                blueButton = Math.floor(Math.random() * ((12 - 1) + 1) + 1);
+                yellowButton = Math.floor(Math.random() * ((12 - 1) + 1) + 1);
+                greenButton = Math.floor(Math.random() * ((12 - 1) + 1) + 1);
+                ourTotal = 0;
+                $("#wins").text(wins);
             };
         });
         $("#button-2").on("click", function () {
             ourTotal = blueButton + ourTotal;
-            $("#ourTotal").html(ourTotal);
+            $("#ourTotal").text(ourTotal);
             if (ourTotal < RandomNumber) {
-                $("#ourTotal").html(ourTotal);
+                $("#ourTotal").text(ourTotal);
             } else if (ourTotal > RandomNumber) {
                 losses = (losses + 1);
-                $("#losses").html(losses);
+                RandomNumber = Math.floor(Math.random() * ((120 - 19) + 1) + 19);
+                redButton = Math.floor(Math.random() * ((12 - 1) + 1) + 1);
+                blueButton = Math.floor(Math.random() * ((12 - 1) + 1) + 1);
+                yellowButton = Math.floor(Math.random() * ((12 - 1) + 1) + 1);
+                greenButton = Math.floor(Math.random() * ((12 - 1) + 1) + 1);
+                ourTotal = 0;
+                $("#losses").text(losses);
             } else if (ourTotal === RandomNumber) {
                 wins = (wins + 1);
-                $("#wins").html(wins);
+                redButton = Math.floor(Math.random() * ((12 - 1) + 1) + 1);
+                blueButton = Math.floor(Math.random() * ((12 - 1) + 1) + 1);
+                yellowButton = Math.floor(Math.random() * ((12 - 1) + 1) + 1);
+                greenButton = Math.floor(Math.random() * ((12 - 1) + 1) + 1);
+                ourTotal = 0;
+                $("#wins").text(wins);
             };
         });
         $("#button-3").on("click", function () {
             ourTotal = yellowButton + ourTotal;
-            $("#ourTotal").html(ourTotal);
+            $("#ourTotal").text(ourTotal);
             if (ourTotal < RandomNumber) {
-                $("#ourTotal").html(ourTotal);
+                $("#ourTotal").text(ourTotal);
             } else if (ourTotal > RandomNumber) {
                 losses = (losses + 1);
-                $("#losses").html(losses);
+                RandomNumber = Math.floor(Math.random() * ((120 - 19) + 1) + 19);
+                redButton = Math.floor(Math.random() * ((12 - 1) + 1) + 1);
+                blueButton = Math.floor(Math.random() * ((12 - 1) + 1) + 1);
+                yellowButton = Math.floor(Math.random() * ((12 - 1) + 1) + 1);
+                greenButton = Math.floor(Math.random() * ((12 - 1) + 1) + 1);
+                ourTotal = 0;
+                $("#losses").text(losses);
             } else if (ourTotal === RandomNumber) {
                 wins = (wins + 1);
-                $("#wins").html(wins);
+                redButton = Math.floor(Math.random() * ((12 - 1) + 1) + 1);
+                blueButton = Math.floor(Math.random() * ((12 - 1) + 1) + 1);
+                yellowButton = Math.floor(Math.random() * ((12 - 1) + 1) + 1);
+                greenButton = Math.floor(Math.random() * ((12 - 1) + 1) + 1);
+                ourTotal = 0;
+                $("#wins").text(wins);
             };
         });
         $("#button-4").on("click", function () {
             ourTotal = greenButton + ourTotal;
-            $("#ourTotal").html(ourTotal);
+            $("#ourTotal").text(ourTotal);
             if (ourTotal < RandomNumber) {
-                $("#ourTotal").html(ourTotal);
+                $("#ourTotal").text(ourTotal);
             } else if (ourTotal > RandomNumber) {
                 losses = (losses + 1);
-                $("#losses").html(losses);
+                redButton = Math.floor(Math.random() * ((12 - 1) + 1) + 1);
+                blueButton = Math.floor(Math.random() * ((12 - 1) + 1) + 1);
+                yellowButton = Math.floor(Math.random() * ((12 - 1) + 1) + 1);
+                greenButton = Math.floor(Math.random() * ((12 - 1) + 1) + 1);
+                ourTotal = 0;
+                $("#losses").text(losses);
             } else if (ourTotal === RandomNumber) {
                 wins = (wins + 1);
-                $("#wins").html(wins);
+                redButton = Math.floor(Math.random() * ((12 - 1) + 1) + 1);
+                blueButton = Math.floor(Math.random() * ((12 - 1) + 1) + 1);
+                yellowButton = Math.floor(Math.random() * ((12 - 1) + 1) + 1);
+                greenButton = Math.floor(Math.random() * ((12 - 1) + 1) + 1);
+                ourTotal = 0;
+                $("#wins").text(wins);
             };
         });
 });
